@@ -1,15 +1,15 @@
-# Spotify Now Playing
+# Music(itunes) Now Playing
 
 <p align="center">
-  <a href="https://github.com/fork-my-spoons/spotify-now-playing.spoon/actions">
-    <img alt="Build" src="https://github.com/fork-my-spoons/spotify-now-playing.spoon/workflows/release/badge.svg"/></a>
-  <a href="https://github.com/fork-my-spoons/spotify-now-playing.spoon/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/fork-my-spoons/spotify-now-playing.spoon"/></a>
-  <a href="https://github.com/fork-my-spoons/spotify-now-playing.spoon/releases">
-    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/fork-my-spoons/spotify-now-playing.spoon/total"/></a>
+  <a href="https://github.com/fork-my-spoons/music-now-playing.spoon/actions">
+    <img alt="Build" src="https://github.com/fork-my-spoons/music-now-playing.spoon/workflows/release/badge.svg"/></a>
+  <a href="https://github.com/fork-my-spoons/music-now-playing.spoon/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/fork-my-spoons/music-now-playing.spoon"/></a>
+  <a href="https://github.com/fork-my-spoons/music-now-playing.spoon/releases">
+    <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/fork-my-spoons/music-now-playing.spoon/total"/></a>
 </p>
 
-A menu bar app which shows currently playing song on Spotify:
+A menu bar app which shows currently playing song on Music.app:
 
 Playing: 
 
@@ -35,15 +35,15 @@ Click on the bar toggles the playback. It is also possible to setup shortcuts to
 
       ```brew install hammerspoon --cask```
 
- - download [spotify-now-playing.spoon](https://github.com/fork-my-spoons/spotify-now-playing.spoon/releases/latest/download/spotify-now-playing.spoon.zip), unzip and double click on a .spoon file. It will be installed under `~/.hammerspoon/Spoons` folder.
+ - download [music-now-playing.spoon](https://github.com/fork-my-spoons/music-now-playing.spoon/releases/latest/download/music-now-playing.spoon.zip), unzip and double click on a .spoon file. It will be installed under `~/.hammerspoon/Spoons` folder.
  
  - open ~/.hammerspoon/init.lua and add the following snippet, adding your parameters:
 
 ```lua
 -- Spotify current song
-hs.loadSpoon("spotify-now-playing")
-spoon['spotify-now-playing']:start()
-spoon['spotify-now-playing']:bindHotkeys(
+hs.loadSpoon("music-now-playing")
+spoon['music-now-playing']:start()
+spoon['music-now-playing']:bindHotkeys(
   {
     next={ {"alt"}, "."},
     prev={ {"alt"}, ","},
