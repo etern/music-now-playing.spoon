@@ -14,13 +14,13 @@ A menu bar app which shows currently playing song on Music.app:
 Playing: 
 
 <p align="center">
-  <img alt="screenshot" src="https://github.com/etern/spotify-current-song.spoon/raw/main/screenshots/screenshot.png">
+  <img alt="screenshot" src="https://github.com/etern/music-current-song.spoon/raw/main/screenshots/screenshot.png">
 </p>
   
 Paused:
   
 <p align="center">
-  <img alt="screenshot2" src="https://github.com/etern/spotify-current-song.spoon/raw/main/screenshots/screenshot2.png">
+  <img alt="screenshot2" src="https://github.com/etern/music-current-song.spoon/raw/main/screenshots/screenshot2.png">
 </p>
   
 Click on the bar toggles the playback. It is also possible to setup shortcuts to play next/previous track and toggle the playback - see below.
@@ -40,20 +40,20 @@ Click on the bar toggles the playback. It is also possible to setup shortcuts to
  - open ~/.hammerspoon/init.lua and add the following snippet, adding your parameters:
 
 ```lua
--- Spotify current song
+-- music now playing
 hs.loadSpoon("music-now-playing")
 spoon['music-now-playing']:start()
 spoon['music-now-playing']:bindHotkeys(
   {
-    next={ {"alt"}, "."},
-    prev={ {"alt"}, ","},
-    playpause={ {"alt"}, "/"}
+    next={ {"ctrl", "alt"}, "Right"},
+    prev={ {"ctrl", "alt"}, "Left"},
+    playpause={ {"ctrl", "alt"}, "p"}
   }
 )
 ```
 
-The config above sets up the ollowing shortcuts:
+The config above sets up the following shortcuts:
 
- - <kbd>⌥</kbd> + <kbd>,</kbd> - play next track
- - <kbd>⌥</kbd> + <kbd>.</kbd> - play previous track
- - <kbd>⌥</kbd> + <kbd>/</kbd> - play/pause
+ - <kbd>Ctrl Alt →</kbd> - play next track
+ - <kbd>Ctrl Alt ←</kbd> - play previous track
+ - <kbd>Ctrl Alt P</kbd> - play/pause
